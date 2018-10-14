@@ -1,5 +1,4 @@
-import { errorIfArrayItemIsNotNumber } from './errorIfArrayItemIsNotNumber';
-import NumberFormat = Intl.NumberFormat;
+import { errorIfArrayItemIsNotNumber } from './index';
 
 
 // Test 1: make sure it catches a string containing a number:

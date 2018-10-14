@@ -1,13 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var errorIfArrayItemIsNotNumber_1 = require("./errorIfArrayItemIsNotNumber");
+var index_1 = require("./index");
 // Test 1: make sure it catches a string containing a number:
 var arr = [-10.0234, 2, 3, 4, 5, 6, 7, 8, 9, 10, '11', 12, 13, 14, 15, 16];
 var errorTriggered = false;
 try {
     var i = -1;
     while (++i < arr.length) {
-        errorIfArrayItemIsNotNumber_1.errorIfArrayItemIsNotNumber(arr[i]);
+        index_1.errorIfArrayItemIsNotNumber(arr[i]);
     }
 }
 catch (e) {
@@ -23,7 +23,7 @@ arr = [-10.0234, 2, 3, 4, 5, 6, 7, 8, 9, 10, Infinity, 12, 13, 14, 15, 16];
 try {
     var i = -1;
     while (++i < arr.length) {
-        errorIfArrayItemIsNotNumber_1.errorIfArrayItemIsNotNumber(arr[i]);
+        index_1.errorIfArrayItemIsNotNumber(arr[i]);
     }
 }
 catch (e) {
@@ -39,7 +39,7 @@ arr = [-10.0234, 2, 3, 4, 5, 6, 7, 8, 9, 10, undefined, 12, 13, 14, 15, 16];
 try {
     var i = -1;
     while (++i < arr.length) {
-        errorIfArrayItemIsNotNumber_1.errorIfArrayItemIsNotNumber(arr[i]);
+        index_1.errorIfArrayItemIsNotNumber(arr[i]);
     }
 }
 catch (e) {
@@ -55,7 +55,7 @@ arr = [-10.0234, 2, 3, 4, 5, 6, 7, 8, 9, 10, NaN, 12, 13, 14, 15, 16];
 try {
     var i = -1;
     while (++i < arr.length) {
-        errorIfArrayItemIsNotNumber_1.errorIfArrayItemIsNotNumber(arr[i]);
+        index_1.errorIfArrayItemIsNotNumber(arr[i]);
     }
 }
 catch (e) {
@@ -71,7 +71,7 @@ arr = [-10.0234, 2, 3, 4, 5, 6, 7, 8, 9, 10, Number.NEGATIVE_INFINITY, 12, 13, 1
 try {
     var i = -1;
     while (++i < arr.length) {
-        errorIfArrayItemIsNotNumber_1.errorIfArrayItemIsNotNumber(arr[i]);
+        index_1.errorIfArrayItemIsNotNumber(arr[i]);
     }
 }
 catch (e) {
@@ -87,7 +87,7 @@ arr = [-10.0234, 2, 3, 4, 5, 6, 7, 8, 9, 10, Number.POSITIVE_INFINITY, 12, 13, 1
 try {
     var i = -1;
     while (++i < arr.length) {
-        errorIfArrayItemIsNotNumber_1.errorIfArrayItemIsNotNumber(arr[i]);
+        index_1.errorIfArrayItemIsNotNumber(arr[i]);
     }
 }
 catch (e) {
@@ -103,7 +103,7 @@ arr = [-10.0234, 2, 3, 4, 5, 6, 7, 8, 9, 10, true, 12, 13, 14, 15, 16];
 try {
     var i = -1;
     while (++i < arr.length) {
-        errorIfArrayItemIsNotNumber_1.errorIfArrayItemIsNotNumber(arr[i]);
+        index_1.errorIfArrayItemIsNotNumber(arr[i]);
     }
 }
 catch (e) {
@@ -119,7 +119,7 @@ arr = [-10.0234, 2, 3, 4, 5, 6, 7, 8, 9, 10, null, 12, 13, 14, 15, 16];
 try {
     var i = -1;
     while (++i < arr.length) {
-        errorIfArrayItemIsNotNumber_1.errorIfArrayItemIsNotNumber(arr[i]);
+        index_1.errorIfArrayItemIsNotNumber(arr[i]);
     }
 }
 catch (e) {
@@ -135,7 +135,7 @@ arr = [-10.0234, 2, 3, 4, 5, 6, 7, 8, 9, 10, [], 12, 13, 14, 15, 16];
 try {
     var i = -1;
     while (++i < arr.length) {
-        errorIfArrayItemIsNotNumber_1.errorIfArrayItemIsNotNumber(arr[i]);
+        index_1.errorIfArrayItemIsNotNumber(arr[i]);
     }
 }
 catch (e) {
